@@ -17,11 +17,29 @@
         <script type="text/javascript" src="js/app.js"></script>
     </head>
 
-    <body>
+    <body ng-controller="MainController as ctrl">
 
-        <new-note-form ng-show="newNoteButton.openForm" ng-hide="newNoteForm.formClosed" ></new-note-form>
-        <notes  ng-hide="newNoteButton.openForm" ng-show="newNoteForm.formClosed"></notes>
-        <new-note-button ng-hide="newNoteButton.openForm" ng-show"newNoteForm.formClosed"></new-note-button>
-    </body>
+        <form ng-show="openForm" class=" container newNoteForm" ng-submit="submit()">
+            <input class="form-control newNoteTitle" type="text" placeholder="New note" ng-model="noteTitle"> <br>
+            <textarea class="form-control newNoteText" rows="8" cols="20" placeholder="Type something!" ng-model="noteText"></textarea>
+            <button type="submit" class="btn btn-default newNoteSaveButton">Save</button>
+        </form>
+
+        <div ng-show="!openForm" class="container grid" name="newNoteForm">
+            <input class="form-control searchInput" type="text" ng-model="searchBar" placeholder="Search a note...">
+            <div class="row">
+                <div ng-repeat="note in notes | filter:searchBar" class="col-md-7 ">
+                    <div class="note">
+                        <h3>{{note.title}}</h3>
+                        <p> {{note.text}} </p>
+                        <div>{{note.date | date:'MM/dd/yyyy'}} at {{note.date | date:'hh:mm a'}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button ng-show="!openForm" type="button" name="button" class="newNoteButton" ng-click="openNewNoteForm()">+</button>
+
+</body>
 
 </html>
