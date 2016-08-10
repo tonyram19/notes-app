@@ -1,7 +1,7 @@
-<div class="container" >
-    <input class="form-control" type="text" ng-model="searchBar" placeholder="Search a note...">
+<div class="container grid" >
+    <input class="form-control searchInput" type="text" ng-model="searchBar" placeholder="Search a note...">
     <div class="row">
-        <div ng-repeat="note in NoteCtrl.notes | filter:searchBar" class="col-md-4">
+        <div ng-repeat="note in NoteCtrl.notes | filter:searchBar" class="col-md-7 ">
             <div class="note">
                 <h3>{{note.title}}</h3>
                 <p> {{note.text}} </p>
