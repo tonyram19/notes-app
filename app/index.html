@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html nd-app="notes">
     <head>
         <meta charset="utf-8">
         <title>Notes</title>
@@ -16,7 +16,13 @@
         <script type="text/javascript" src="angular/angular.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
+
     <body>
-        <h1>My notes</h1>
+
+        <div ng-controller="NotesController as data">
+            <h1>{{data.notes}}</h1>
+        </div>
+
     </body>
+
 </html>
