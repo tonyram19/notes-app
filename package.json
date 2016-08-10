@@ -1,32 +1,37 @@
 {
-    "name": "notes-app",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app/index.js",
-    "engines": {
-        "node": "4.1.1",
-        "npm": "2.14.3"
-    },
-    "scripts": {
-        "test": "node test",
-        "start": "node app"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/tonyram19/notes-app"
-    },
-    "author": "Tony Ramirez",
-    "license": "",
-    "bugs": {
-        "url": ""
-    },
-    "homepage": "",
-    "dependencies": {
-        "body-parser": "^1.13.2",
-        "express": "^4.13.1"
-    },
-    "devDependencies": {
-        "supertest": "^1.0.1",
-        "tape": "^4.0.1"
-    }
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.14.3"
+  },
+  "scripts": {
+    "test": "node test",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonyram19/notes-app"
+  },
+  "author": "Tony Ramirez",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "supertest": "^1.0.1",
+    "tape": "^4.0.1"
+  }
 }
