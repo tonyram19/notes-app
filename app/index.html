@@ -18,9 +18,10 @@
     <body ng-controller="MainController as ctrl">
 
         <form ng-show="openForm" class=" container newNoteForm" ng-submit="submit()">
-            <input class="form-control newNoteTitle" type="text" placeholder="New note" ng-model="noteTitle"> <br>
+            <input class="form-control newNoteTitle" type="text" placeholder="Title" ng-model="noteTitle"> <br>
             <textarea class="form-control newNoteText" rows="8" cols="20" placeholder="Type something!" ng-model="noteText"></textarea>
             <button type="submit" class="btn btn-default newNoteSaveButton">Save</button>
+            <button type="button" class="btn btn-default newNoteDiscardButton" ng-click="discard()">Discard</button>
         </form>
 
         <div ng-show="!openForm" class="container grid" name="newNoteForm">

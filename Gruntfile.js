@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['app/public/css/**/*.css'],
-                tasks: ['concat:css', 'uglify:css']
+                tasks: ['concat:css', 'cssmin:css']
             }
         }
     });
