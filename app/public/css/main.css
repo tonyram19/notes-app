@@ -1,0 +1,11 @@
+body {
+    background-color: white;
+}
+
+.note {
+    color: black;
+    background-color: #F9AE74;
+    box-shadow: 1px 1px 3px black;
+    padding: 3px;
+    margin-top: 10px;
+}
