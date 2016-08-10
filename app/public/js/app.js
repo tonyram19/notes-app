@@ -14,3 +14,14 @@ app.directive("note", ['$http', function($http) {
         controllerAs: 'NoteCtrl'
     };
 }]);
+
+app.directive("newNoteButton", [function() {
+    return {
+        restrict: 'E',
+        templateUrl: '../views/new-note-button.html',
+        controller: function() {
+
+        },
+        controllerAs: 'NewNoteButtonCtrl'
+    };
+}]);

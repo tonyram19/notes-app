@@ -18,3 +18,26 @@ body {
     padding-right: 10%;
     margin-top: 10px;
 }
+
+.newNoteButton {
+    background-color: #D04E33;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px black;
+    width: 80px;
+    height: 80px;
+    color: #ecf0f1;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 35px;
+    right: 6%;
+}
+
+.newNoteButton:hover {
+  background-color: #E66A39;
+  cursor: pointer;
+}
