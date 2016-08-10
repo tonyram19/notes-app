@@ -30,7 +30,6 @@ app.controller("MainController", ['$http', '$scope', function($http, $scope) {
         $http.post("/note", newNote).then(function(response) {
             $scope.getNotes();
             $scope.closeNewNoteForm();
-            $scope.newNoteForm.$SetPristine();
         });
 
     };
