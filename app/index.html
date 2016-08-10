@@ -19,9 +19,9 @@
 
     <body>
 
-        <note></note>
-        <new-note-button></new-note-button>
-
+        <new-note-form ng-show="newNoteButton.openForm" ng-hide="newNoteForm.formClosed" ></new-note-form>
+        <notes  ng-hide="newNoteButton.openForm" ng-show="newNoteForm.formClosed"></notes>
+        <new-note-button ng-hide="newNoteButton.openForm" ng-show"newNoteForm.formClosed"></new-note-button>
     </body>
 
 </html>

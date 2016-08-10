@@ -19,6 +19,12 @@ body {
     margin-top: 10px;
 }
 
+.newNoteForm {
+    bottom: 50%;
+    margin: auto;
+    margin-top: 90px;
+}
+
 .newNoteButton {
     background-color: #D04E33;
     border: none;
@@ -40,4 +46,8 @@ body {
 .newNoteButton:hover {
   background-color: #E66A39;
   cursor: pointer;
+}
+
+.newNoteSaveButton {
+    margin-top: 15px;
 }
