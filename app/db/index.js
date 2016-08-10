@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var notesDir = path.join(__dirname, 'notes');
-console.log(notesDir);
+
 function findAll () {
   return fs
     .readdirSync(notesDir)
