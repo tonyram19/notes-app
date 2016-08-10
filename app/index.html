@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html nd-app="notes">
+<html ng-app="notesApp">
     <head>
         <meta charset="utf-8">
         <title>Notes</title>
@@ -19,8 +19,8 @@
 
     <body>
 
-        <div ng-controller="NotesController as data">
-            <h1>{{data.notes}}</h1>
+        <div ng-controller="NotesController as notesCtrl">
+            <h1>{{notesCtrl.notes[0]}}</h1>
         </div>
 
     </body>
