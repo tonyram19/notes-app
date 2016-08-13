@@ -17,12 +17,12 @@ body {
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .deleteButton {
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     right: 45px;
 }
 
@@ -44,6 +44,7 @@ body {
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     left: 46%;
 }
 
@@ -55,4 +56,9 @@ body {
 .newNoteSaveButton, .newNoteDiscardButton {
     margin-top: 15px;
     margin-right: 5px;
+}
+
+.dateText {
+    font-size: 12px;
+    font-weight: bold;
 }
