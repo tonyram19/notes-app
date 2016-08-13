@@ -33,21 +33,18 @@ body {
 }
 
 .newNoteButton {
+    position: relative;
     background-color: #AFB42B;
     border: none;
-    border-radius: 50%;
-    box-shadow: 2px 2px 1px black;
-    width: 80px;
-    height: 80px;
+    border-radius: 25%;
+    box-shadow: 1px 1px 1px black;
+    width: 45px;
+    height: 45px;
     color: #ecf0f1;
-    font-weight: bolder;
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
-    text-decoration: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -40px;
+    margin-top: 10px;
+    left: 46%;
 }
 
 .newNoteButton:hover {
