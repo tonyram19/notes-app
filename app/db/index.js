@@ -24,6 +24,10 @@ function finById (id) {
     }
 }
 
+function remove(fileName) {
+    fs.unlink(path.join(notesDir, fileName));
+}
+
 function create (note) {
     if (lastId() == null)
         note.id = 1;
@@ -48,5 +52,6 @@ function lastId () {
 module.exports = {
     findAll: findAll,
     finById: finById,
+    remove: remove,
     create: create
 };

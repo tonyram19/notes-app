@@ -30,7 +30,7 @@
             <div class="row">
                 <div ng-repeat="note in notes | filter:searchBar" class="col-md-7 ">
                     <div class="note">
-                        <button type="button" class="deleteButton btn btn-default">
+                        <button type="button" class="deleteButton btn btn-default" ng-click="deleteNote(note.id)">
                             <span class="glyphicon glyphicon glyphicon-trash" ></span>
                         </button>
                         <h2>{{note.title}}</h2>

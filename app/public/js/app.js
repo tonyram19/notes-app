@@ -18,7 +18,18 @@ app.controller("MainController", ['$http', '$scope', function($http, $scope) {
 
     $scope.discard = function() {
         $scope.closeNewNoteForm();
-    }
+    };
+
+    $scope.deleteNote = function(id) {
+        $http.delete('/notes/' + id);
+        $scope.getNotes();
+    };
+
+    $scope.getNote = function(id) {
+        $http.get('/notes/' + id).then(function(response) {
+            console.log(response);
+        });
+    };
 
     $scope.submit = function() {
 

@@ -24,11 +24,15 @@ app.get('/notes', function (req, res) {
 
 app.get('/notes/:id', function (req, res) {
     var note = db.finById(req.params.id);
-    if(note) {
+    if (note) {
         res.json({note: note});
     } else {
         res.sendStatus(404);
     }
+});
+
+app.delete('/notes/:id', function (req, res) {
+    db.remove(req.params.id + '.json');
 });
 
 app.post('/note', function (req, res) {
