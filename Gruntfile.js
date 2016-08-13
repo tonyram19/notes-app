@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: ['app/public/js/**/*.js'],
-                dest: 'app/build/js/scripts.js'
+                dest: 'app/build/js/app.js'
             },
             css: {
                 src: ['app/public/css/**/*.css'],
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 files: {
-                    'app/build/js/scripts.js': ['app/build/js/scripts.js']
+                    'app/build/js/app.js': ['app/build/js/app.js']
                 }
             }
 

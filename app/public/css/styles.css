@@ -21,7 +21,7 @@ body {
 
 .deleteButton {
     position: absolute;
-    top: 25px;
+    bottom: 15px;
     right: 45px;
 }
 
