@@ -3,8 +3,8 @@ body {
 }
 
 .searchInput {
-    margin-top: 20px;
     width: 40%;
+    margin-top: 20px;
 }
 
 .note {
@@ -35,18 +35,18 @@ body {
     background-color: #AFB42B;
     border: none;
     border-radius: 50%;
-    box-shadow: 4px 4px 6px black;
+    box-shadow: 2px 2px 1px black;
     width: 80px;
     height: 80px;
     color: #ecf0f1;
     font-weight: bolder;
     font-size: 50px;
-    padding: 10px 5px;
     text-align: center;
     text-decoration: none;
     position: fixed;
-    bottom: 35px;
-    right: 6%;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -40px;
 }
 
 .newNoteButton:hover {

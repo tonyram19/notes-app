@@ -19,16 +19,16 @@
 
         <form ng-show="openForm" class=" container newNoteForm" ng-submit="submit()">
             <h2>New note</h2>
-            <input class="form-control newNoteTitle" type="text" placeholder="Title" ng-model="noteTitle"> <br>
+            <input class="form-control newNoteTitle" type="text" placeholder="Title" ng-model="noteTitle">
             <textarea class="form-control newNoteText" rows="8" cols="20" placeholder="Type something!" ng-model="noteText"></textarea>
             <button type="submit" class="btn btn-default newNoteSaveButton">Save</button>
             <button type="button" class="btn btn-default newNoteDiscardButton" ng-click="discard()">Discard</button>
         </form>
 
-        <div ng-show="!openForm" class="container grid">
+        <div ng-show="!openForm" class="container">
             <input class="form-control searchInput" type="text" ng-model="searchBar" placeholder="Search a note...">
             <div class="row">
-                <div ng-repeat="note in notes | filter:searchBar" class="col-md-7 ">
+                <div ng-repeat="note in notes | filter:searchBar" class="col-md-6 col-md-offset-3">
                     <div class="note">
                         <button type="button" class="deleteButton btn btn-default" ng-click="deleteNote(note.id)">
                             <span class="glyphicon glyphicon glyphicon-trash" ></span>
