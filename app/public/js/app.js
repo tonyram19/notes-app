@@ -2,8 +2,6 @@ var app = angular.module("notesApp", []);
 
 app.controller("MainController", ['$http', '$scope', function($http, $scope) {
 
-    console.log("aasdssdsa");
-
     $scope.getNotes = function() {
         $http.get('/notes').then(function(response) {
             $scope.notes = response.data.notes;
