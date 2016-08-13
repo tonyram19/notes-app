@@ -1,5 +1,5 @@
 body {
-    background-color: #263238;
+    background-color: #ECEFF1;
 }
 
 .searchInput {
@@ -8,8 +8,8 @@ body {
 }
 
 .note {
-    color: #ECEFF1;
-    background-color: #BF360C;
+    color: #37474F;
+    background-color: #FFC400;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
     padding-top: 1%;
@@ -17,7 +17,12 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 10px;
-    text-shadow: 1px 1px 6px black;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 35px;
+    right: 45px;
 }
 
 .newNoteForm {
@@ -27,7 +32,7 @@ body {
 }
 
 .newNoteButton {
-    background-color: #43A047;
+    background-color: #AFB42B;
     border: none;
     border-radius: 50%;
     box-shadow: 4px 4px 6px black;
@@ -45,7 +50,7 @@ body {
 }
 
 .newNoteButton:hover {
-  background-color: #2E7D32;
+  background-color: #9E9D24;
   cursor: pointer;
 }
 
