@@ -1,5 +1,5 @@
 body {
-    background-color: #353C3E;
+    background-color: #263238;
 }
 
 .searchInput {
@@ -8,15 +8,16 @@ body {
 }
 
 .note {
-    color: #EEEEEE;
-    background-color: #E66A39;
+    color: #ECEFF1;
+    background-color: #BF360C;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
     padding-top: 1%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 10px;
+    text-shadow: 1px 1px 6px black;
 }
 
 .newNoteForm {
@@ -26,7 +27,7 @@ body {
 }
 
 .newNoteButton {
-    background-color: #D04E33;
+    background-color: #43A047;
     border: none;
     border-radius: 50%;
     box-shadow: 4px 4px 6px black;
@@ -44,7 +45,7 @@ body {
 }
 
 .newNoteButton:hover {
-  background-color: #E66A39;
+  background-color: #2E7D32;
   cursor: pointer;
 }
 
